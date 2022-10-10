@@ -1,0 +1,38 @@
+﻿<Window x:Class="Tema3_Estaciones.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema3_Estaciones"
+        mc:Ignorable="d"
+        Title="4 Estaciones" Height="450" Width="800" Icon="assets/sunrise_sun_sunny_shower_showers_sunny_cloudy_fog_day_time_1458.ico">
+    <DockPanel>
+        <TextBlock DockPanel.Dock="Top" HorizontalAlignment="Center" FontFamily="Stencil" FontSize="22">
+            <TextBlock.Effect>
+                <DropShadowEffect Opacity="0.5"/>
+            </TextBlock.Effect>
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF14AA59" Offset="0"/>
+                    <GradientStop Color="#FF836002" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground> Las 4 Estaciones</TextBlock>
+        
+        <UniformGrid>
+            <ScrollViewer Margin="20" HorizontalScrollBarVisibility="Auto">
+                <Image Source="assets/invierno.jpg" Stretch="None"></Image>
+            </ScrollViewer>
+            <ScrollViewer Margin="20" HorizontalScrollBarVisibility="Auto">
+                <Image Source="assets/otoño.jpg"></Image>
+            </ScrollViewer>
+            <ScrollViewer Margin="20" HorizontalScrollBarVisibility="Auto">
+                <Image Source="assets/primavera.jpg" Stretch="None"></Image>
+            </ScrollViewer>
+            <ScrollViewer Margin="20" HorizontalScrollBarVisibility="Auto">
+                <Image Source="assets/verano.jpg" Stretch="None"></Image>
+            </ScrollViewer>
+        </UniformGrid>
+    </DockPanel>
+    
+    
+</Window>
