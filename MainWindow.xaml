@@ -25,6 +25,11 @@
                 </Setter.Value>
             </Setter>
         </Style>
+
+        <Style TargetType="{x:Type ScrollViewer}">
+            <Setter Property="Margin" Value="20"></Setter>
+            <Setter Property="HorizontalScrollBarVisibility" Value="Auto"></Setter>
+        </Style>
     </Window.Resources>
     
     <Window.Background>
@@ -38,16 +43,16 @@
         <TextBlock DockPanel.Dock="Top"> Las 4 Estaciones</TextBlock>
 
         <UniformGrid>
-            <ScrollViewer Margin="20" HorizontalScrollBarVisibility="Auto">
+            <ScrollViewer>
                 <Image Source="assets/invierno.jpg" Stretch="None"></Image>
             </ScrollViewer>
-            <ScrollViewer Margin="20" HorizontalScrollBarVisibility="Auto">
+            <ScrollViewer>
                 <Image Source="assets/otoño.jpg"></Image>
             </ScrollViewer>
-            <ScrollViewer Margin="20" HorizontalScrollBarVisibility="Auto">
+            <ScrollViewer>
                 <Image Source="assets/primavera.jpg" Stretch="None"></Image>
             </ScrollViewer>
-            <ScrollViewer Margin="20" HorizontalScrollBarVisibility="Auto">
+            <ScrollViewer>
                 <Image Source="assets/verano.jpg" Stretch="None"></Image>
             </ScrollViewer>
         </UniformGrid>
