@@ -6,23 +6,36 @@
         xmlns:local="clr-namespace:Tema3_Estaciones"
         mc:Ignorable="d"
         Title="4 Estaciones" Height="450" Width="800" Icon="assets/sunrise_sun_sunny_shower_showers_sunny_cloudy_fog_day_time_1458.ico">
+    <Window.Resources>
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+            <Setter Property="FontFamily" Value="Stencil"></Setter>
+            <Setter Property="FontSize" Value="32"></Setter>
+            <Setter Property="Foreground">
+                <Setter.Value >
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF14AA59" Offset="0"/>
+                        <GradientStop Color="#FF836002" Offset="1"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Opacity="0.5"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
             <GradientStop Color="#FF00A2FF" Offset="0"/>
             <GradientStop Color="#FF69DDFF" Offset="1"/>
         </LinearGradientBrush>
     </Window.Background>
+
     <DockPanel>
-        <TextBlock DockPanel.Dock="Top" HorizontalAlignment="Center" FontFamily="Stencil" FontSize="22">
-            <TextBlock.Effect>
-                <DropShadowEffect Opacity="0.5"/>
-            </TextBlock.Effect>
-            <TextBlock.Foreground>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF14AA59" Offset="0"/>
-                    <GradientStop Color="#FF836002" Offset="1"/>
-                </LinearGradientBrush>
-            </TextBlock.Foreground> Las 4 Estaciones</TextBlock>
+        <TextBlock DockPanel.Dock="Top"> Las 4 Estaciones</TextBlock>
 
         <UniformGrid>
             <ScrollViewer Margin="20" HorizontalScrollBarVisibility="Auto">
